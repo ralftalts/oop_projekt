@@ -29,6 +29,7 @@ public class Mang {
         return kysimused.size() - kasutatud.size();
     }
 
+    //standartne failist lugemise meetod
     private void laeFailist() throws IOException {
         BufferedReader lugeja = new BufferedReader(new FileReader(failiTee));
         String rida;
@@ -44,6 +45,7 @@ public class Mang {
         lugeja.close();
     }
 
+    //kasutab randomit, et küsida juhuslik küsimus, mida pole juba küsitud
     public Kysimus juhuslikKysimus() {
         if (kasutatud.size() >= kysimused.size()) {
             kasutatud.clear();
@@ -61,7 +63,4 @@ public class Mang {
         return kysimus.onOige(vastus);
     }
 
-    public boolean onKysimusi() {
-        return !kysimused.isEmpty();
-    }
 }
