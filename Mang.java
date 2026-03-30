@@ -49,7 +49,7 @@ public class Mang {
     public Kysimus juhuslikKysimus() {
         if (kasutatud.size() >= kysimused.size()) {
             kasutatud.clear();
-            System.out.println("  (Kõik küsimused esitatud — alustan otsast)");
+            System.out.println("  (Kõik küsimused esitatud — alustame uuesti)");
         }
         int indeks;
         do {
