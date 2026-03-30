@@ -1,9 +1,9 @@
-public class Mängija {
+public class Mangija {
 
     private String nimi;
     private int punktid;
 
-    public Mängija(String nimi) {
+    public Mangija(String nimi) {
         this.nimi = nimi;
         this.punktid = 0;
     }
