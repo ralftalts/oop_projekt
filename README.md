@@ -11,7 +11,7 @@ Programm loeb failist küsimused sisse ja kasutades abimeetodit random valib suv
 
 Iga õige vastuse eest saab 1p ja kui kõigile küsimustele on vastatud, kuvab programm ekraanile, mitu punkti sa said.
 
-Klass Mang - sisaldab endas mängu loogikat. laeFailist() loeb küsimusi failist ja loob klassi Kysimus objektid. juhuslikKysimus() tagastab juhuslikult küsimuse, mida pole juba küsitud. kontrolliVastys() kontrollib, kas vastus on õige.
+Klass Mang - sisaldab endas mängu loogikat. laeFailist() loeb küsimusi failist ja loob klassi Kysimus objektid. juhuslikKysimus() tagastab juhuslikult küsimuse, mida pole juba küsitud. kontrolliVastus() kontrollib, kas vastus on õige.
 
 Klass Mangija - see loob mängija, hoiab tema nime ja punktisummat. lisaPunkt() suurendab mängija punktiarvu ühe võrra, getPunktid() tagastab mängija hetke punktisumma, getNimi() tagastab mängija nime.
 
@@ -19,10 +19,11 @@ Klass Peaklass - main klass, mis seob kõik klassid ühtseks programmiks. Ta kü
 
 Klass Kysimus - talletab endas hetkel aktiivse küsimuse vastusevarianti ja õige vastuse indeksit. kuva() abil kuvatakse küsimus ja variandid ekraanile, onOige(int vastus) kontrollib vastuse õigsust, getOigeVastus() tagastab õige vastuse teksti.
 
-iga klassi kohta eraldi selle eesmärk ja olulisemad meetodid;
 
-projekti tegemise protsessi kirjeldus (erinevad etapid ja rühmaliikmete osalemine neis);
-iga rühmaliikme panus (sh tehtud klassid/meetodid) ja ajakulu (orienteeruvalt);
+Me otsustasime ära millise programmi me luua tahame, arutasime läbi, mis klasse see vajaks ja seejärel jaotasime ära, kes millega tegeleb. Nädal peale seda vaatasime üle, mis me loonud olime ja redigeerimise oma koodijuppe, et need omavahel ühtiksid.
+
+Iris lõi klassid Peaklass, Mangija ja tekstifaili, Ralf lõi klassid Mang ja Kysimus.
+Orienteeruvalt võttis töö aega 6-8h.
 
 
 tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust);
