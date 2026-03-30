@@ -1,0 +1,5 @@
+Mis on pärilus?;ülemklassi omaduste kandumine alamklassile;ülemklassi konstruktori käivitamine;piiritleja määramine;objekti väljade väärtustamine;1
+Mida teeb konstruktor?;määrab, kuidas antud objekt tekstina välja näeb;teeb massiiviloomet;määrab objekti tüübi;väärtustab objekti väljad isendi loomise käigus;4
+Mis sõna kasutatakse liidese realiseerimisel?;extends;implements;override;compareTo;2
+Milline on sobiv klass sõne dünaamiliseks käsitlemiseks (nt. muutmiseks)?;String;equals;StringBuilder;StringTokenizer;3
+Milline piiritleja määrab klassisisese kasutusõiguse?;protected;public;private;package-private;3
