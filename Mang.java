@@ -60,7 +60,7 @@ public class Mang {
             kasutatud.clear();
             System.out.println("  (Kõik küsimused esitatud — alustan otsast)");
         }
-
+        
         int indeks;
         do {
             indeks = random.nextInt(kysimused.size());
@@ -78,25 +78,5 @@ public class Mang {
         return !kysimused.isEmpty();
     }
 
-    public static List<Kysimus> loeKysimused(String failiTee) throws IOException {
-        List<Kysimus> nimekiri = new ArrayList<>();
-        BufferedReader lugeja  = new BufferedReader(new FileReader(failiTee));
-
-        String rida;
-        while ((rida = lugeja.readLine()) != null) {
-            rida = rida.trim();
-            if (rida.isEmpty()) continue;
-
-            String[] osad = rida.split(";");
-
-            String   tekst      = osad[0];
-            String[] vastused   = { osad[1], osad[2], osad[3], osad[4] };
-            int      oigeIndeks = Integer.parseInt(osad[5].trim());
-
-            nimekiri.add(new Kysimus(tekst, vastused, oigeIndeks));
-        }
-
-        lugeja.close();
-        return nimekiri;
     }
 }
