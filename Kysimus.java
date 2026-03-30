@@ -1,3 +1,4 @@
+
 public class Kysimus {
 
     private String   tekst;        // Küsimuse tekst
@@ -9,31 +10,26 @@ public class Kysimus {
         this.vastused   = vastused;
         this.oigeIndeks = oigeIndeks;
     }
-
+    
     public String getTekst() {
         return tekst;
     }
-
     public String[] getVastused() {
         return vastused;
     }
-
     public int getOigeIndeks() {
         return oigeIndeks;
     }
-
+    
     public void setTekst(String tekst) {
         this.tekst = tekst;
     }
-
     public void setVastused(String[] vastused) {
         this.vastused = vastused;
     }
-
     public void setOigeIndeks(int oigeIndeks) {
         this.oigeIndeks = oigeIndeks;
     }
-
     public boolean onOige(int vastus) {
         return vastus == oigeIndeks;
     }
