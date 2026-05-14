@@ -58,6 +58,7 @@ import java.util.List;
             hinnangLabel.setFont(Font.font("Georgia", 18));
             hinnangLabel.setStyle("-fx-text-fill: #c8d0e8;");
 
+            // Logifaili abil sisestatud vastuste info kuvamine
             Label logiPealkiri = new Label("Käikude ajalugu (logifailist):");
             logiPealkiri.setFont(Font.font("Georgia", FontWeight.BOLD, 14));
             logiPealkiri.setStyle("-fx-text-fill: #e2b96f;");
@@ -71,7 +72,7 @@ import java.util.List;
                             "-fx-font-family: monospace; -fx-font-size: 12px;"
             );
             
-            // Logifaili abil sisestatud vastuste info kuvamine
+        
             logiAla.setPrefHeight(160);
 
             List<ManguLogi.LogiKirje> kirjed = logi.loeKoikKirjed();
