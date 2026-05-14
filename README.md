@@ -61,4 +61,8 @@ Klass ManguVaade käsitleb kasutaja vaadet JavaFX liidese abil. Seal on kogu inf
 
 Klass LoppVaade käsitleb seda, milline on kasutaja vaade mängu lõppedes. See näitab logifaili abil käikude ajalugu ning kuvab punktid nii arvuliselt kui ka protsentuaalselt, lisades vastava kommentaari (nt. “Harjuta edasi”).
 
-Tehisintellekti kasutati antud projekti raames, et rakendada java fx abil graafilist kasutajaliidest. Valdava enamuse ülejäänud metoodikast ja loogikas kirjutasid tudengid. Tehisaru aitas veenduda, et rakendus komplieerub ja oma ülesannet täidab. 
+Tehisintellekti kasutati antud projekti raames, et rakendada Java FX abil graafilist kasutajaliidest. Valdava enamuse ülejäänud metoodikast ja loogikas kirjutasid tudengid. Tehisaru aitas veenduda, et rakendus kompileerub ja oma ülesannet täidab. 
+
+Ajakulu oli orienteeruvalt sama, mis esimeses osas (ca 6-8 tundi) ning otsest klasside tegemise jagamist ei olnud nagu esimeses osas, tegime mõlemad.
+
+Projekti tegemise protsess kulges hästi, kuna praktikumides käsitleti paralleelselt samasid teemasid ning sai kohe õpitut projektis rakendada. Saime juba esimeses etapis aru, et soovime lahendada töö graafilise kasutajaliidesega, seega visioon asjast oli meil juba olemas. Mingisugust keerulist loogikat kasutajaliidese taga otseselt ei ole, kuna küsimuste ja vastuste kuvamine on lahendatud klassikalise valikvastuste süsteemi abil.
