@@ -29,3 +29,36 @@ Programmi kirjutamisel tundsime puudust sellest, et programm näeb suhteliselt a
 Saime hästi hakkama sellega, et tegu on programmiga, millest on õppimisel päriselt kasu ning endalgi jäid programmi katsetades vastused meelde, millest on siin kursusel ainult kasu. Arendamist vajaks nt. see, et kui mäng saab läbi, siis küsida informatsiooni kinnistamiseks uuesti valesti vastatud küsimusi (juhul, kui neid oli) nii kaua, kuni kasutaja vastab õigesti.  Lisada võiks realiseerida ka eelnevalt mainitud graafilise väljundi. Idee poolest oleks tore ka see, kui programm oleks võimeline meelde jätma eelnevalt mängitud mänge ja võrdlema tulemusi omavahel.
 
 Programmi testimisel mängis olulist rolli see, et tegime kumbki klasse, mis üksteisest sõltuvad, seega pidime suhteliselt kiiresti oma eraldi kirjutatud klassid ühendama ning seejärel tegema vastavaid kohandusi, et need omavahel koos töötaksid. Kuna tegu ei ole iseenesest keerulise ülesehitusega programmiga, siis otseselt mingeid ületamatuid raskusi ette ei tulnud programmi töötamise osas, kuna kõik on varasemalt kursuse jooksul läbitud teemad ning abi sai ka otsida kursuse materjalidest / eelnevalt kirjutatud koodijuppidest.
+
+
+
+-----
+II OSA
+-----
+
+autorite nimed;
+projekti põhjalik kirjeldus, kus on kirjas programmi eesmärk ja selgitus programmi üldisest tööst, vajadusel lühike kasutusjuhis;
+iga klassi kohta eraldi selle eesmärk ja olulisemad meetodid;
+projekti tegemise protsessi kirjeldus (erinevad etapid ja rühmaliikmete osalemine neis);
+tehisintellekti kasutamise kirjeldus (milleks ja kuidas seda kasutati (kui seda kasutati), milliseid tööriistu kasutati ning milline osa lahendusest on tehisintellekti abil loodud);
+iga rühmaliikme panus (sh tehtud klassid/meetodid) ja ajakulu (orienteeruvalt);
+tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust);
+hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
+selgitus ja/või näited, kuidas programmi osi eraldi ja programmi tervikuna testisite ehk kuidas veendusite, et programm töötab korrektselt.
+
+
+Autorid: Ralf Talts, Iris Alexandra Tikerpuu
+
+Projekti eesmärk on kinnistada Objektorienteeritud programmeerimise kursusel omandatud teadmised viktoriini vormis. Kasutaja sisestab oma nime ning talle hakatakse tekstifailist väljastama erinevaid küsimusi koos vastusevariantidega. Programm loeb ka punkte vastavalt õigete vastuste arvule ning väljastab tulemuse mängu lõppedes ekraanile koos sisestatud vastuste ning ka õigete vastuste protsendiga.
+
+Klass Kysimus sisaldab endas faili “kysimused.txt” küsimusi, vastusevariante ja õige vastuse indekseid ning nende get-meetodeid.
+
+Klass Mängija käsitleb mängija infot - tema nime ja punkte. Klassis on nime ja punktide jaoks get-meetodid ja meetodid lisaPunkt() ja eemaldaPunkt().
+
+Klass ManguLogi käsitleb logifaili, millesse salvestatakse kasutaja poolt antud vastused. Selle abil saab küsimuste vahel ka tagasi liikuda ning vastust uuesti sisestada. See sisaldab meetodeid salvesta(), mis salvestab mängija vastuse faili, onTagasivotmineVoimalik(), mis on boolean-tüüpi meetod, mis tagastab true, kui vähemalt üks vastus on sisestatud (ehk on võimalik tagasi liikuda), loeKoikKirjed(), mis loeb failist kirjed, ja kirjutaRida, mis lisab faili rea.
+
+Klass ManguVaade käsitleb kasutaja vaadet JavaFX liidese abil. Seal on kogu info selle kohta, milline näeb välja graafiline kasutajaliides, kuhu tulevad vastusevariandid, kuhu kasutaja sisestab nime, mis on hetkene punktide seis jne. Erinevad selle klassi meetodid hõlmavad endas nt. laadijaKysimus(), mis valib küsimuse failist ja uuendab mängija vaadet, kui uus küsimus ekraanile kuvatakse, kasitleVastamine(), mis lahendab probleemi, kui kasutaja ei valinud vastust, kasitleTagasivotmine(), mis ManguLogi klassi abil võimaldab vajutada nuppu “tagasi”, kuvaLoppTulemus(), mis kuvab kasutajale mängu lõppseisu. Lisaks on ka abimeetodid, mis käsitlevad nt. tekstikasti raputamist, kui kasutaja oma nime ei sisesta.
+
+Klass LoppVaade käsitleb seda, milline on kasutaja vaade mängu lõppedes. See näitab logifaili abil käikude ajalugu ning kuvab punktid nii arvuliselt kui ka protsentuaalselt, lisades vastava kommentaari (nt. “Harjuta edasi”).
+
+
