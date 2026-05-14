@@ -34,7 +34,7 @@ import java.util.List;
             // Arvutab õigete vastuste protsendi
             double protsent = kysimusteKogus > 0 ? (double) punktid / kysimusteKogus * 100 : 0;
 
-            // Kogu, mis lõpus ekraanile väljastatakse
+            // Kogu info, mis lõpus ekraanile väljastatakse
             Label loppPealkiri = new Label("Mäng läbi!");
             loppPealkiri.setFont(Font.font("Georgia", FontWeight.BOLD, 32));
             loppPealkiri.setStyle("-fx-text-fill: #e2b96f;");
